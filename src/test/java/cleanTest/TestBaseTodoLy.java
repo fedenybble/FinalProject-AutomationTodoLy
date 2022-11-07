@@ -1,14 +1,24 @@
 package cleanTest;
 
 import io.qameta.allure.Attachment;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import pages.MainPage;
+import pages.NavBar;
+import pages.SignUpModal;
 import singletonSession.Session;
 import utils.GetProperties;
 
+import java.util.Date;
+
 public class TestBaseTodoLy {
+
+    MainPage mainPage = new MainPage();
+    SignUpModal signUpModal = new SignUpModal();
+    NavBar navBar = new NavBar();
 
     @BeforeEach
     public void setup(){
@@ -26,4 +36,6 @@ public class TestBaseTodoLy {
         //Tomar captura de pantalla - Adjuntarlo en el reporte
         return ((TakesScreenshot) Session.getInstance().getBrowser()).getScreenshotAs(OutputType.BYTES);
     }
+
+
 }
