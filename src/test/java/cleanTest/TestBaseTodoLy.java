@@ -6,6 +6,7 @@ import io.qameta.allure.Owner;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import pages.LoginModal;
 import pages.MainPage;
 import pages.NavBar;
 import pages.SignUpModal;
@@ -19,6 +20,7 @@ public class TestBaseTodoLy {
     MainPage mainPage = new MainPage();
     SignUpModal signUpModal = new SignUpModal();
     NavBar navBar = new NavBar();
+    LoginModal loginModal = new LoginModal();
 
     @BeforeEach
     public void setup(){
