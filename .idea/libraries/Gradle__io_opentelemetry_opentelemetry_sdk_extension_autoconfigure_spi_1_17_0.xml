@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:1.17.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.17.0/b97c6ba5818fd5c5436f08287ef90f62ac3e20b5/opentelemetry-sdk-extension-autoconfigure-spi-1.17.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.17.0/fcfe0223213554fcce72083435071d5f94a673f3/opentelemetry-sdk-extension-autoconfigure-spi-1.17.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
