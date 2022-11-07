@@ -44,7 +44,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Owner("Federico Padin")
     public void verifySameNameAndEmail() throws InterruptedException {
 
-        //Thread.sleep(4000);
+
         mainPage.signUpFreeButton.waitClickable();
         mainPage.signUpFreeButton.click();
 
