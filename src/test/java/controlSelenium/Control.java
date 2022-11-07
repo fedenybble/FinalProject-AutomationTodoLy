@@ -16,10 +16,6 @@ public class Control {
     protected WebElement control;
     protected String controlName; // reflection
 
-    public Control (By locator){
-        this.locator=locator;
-    }
-
     public Control (By locator, String controlName) {
         this.locator = locator;
         this.controlName = controlName;

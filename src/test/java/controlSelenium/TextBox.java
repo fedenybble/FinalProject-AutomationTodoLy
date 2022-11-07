@@ -3,10 +3,10 @@ package controlSelenium;
 import org.openqa.selenium.By;
 
 public class TextBox extends Control{
-
-    public TextBox(By locator) {
-        super(locator);
-    }
+//
+//    public TextBox(By locator) {
+//        super(locator);
+//    }
 
     public TextBox(By locator, String controlName) {
         super(locator, controlName);
