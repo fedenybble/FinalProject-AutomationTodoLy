@@ -45,7 +45,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     public void verifySameNameAndEmail() throws InterruptedException {
 
         //Thread.sleep(4000);
-        //mainPage.signUpFreeButton.waitClickable();
+        mainPage.signUpFreeButton.waitClickable();
         mainPage.signUpFreeButton.click();
 
         signUpModal.signUpFullNameInput.waitIsVisible();
@@ -68,12 +68,33 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Owner("Federico Padin")
     public void verifyWithoutEmailField(){
 
+        mainPage.signUpFreeButton.waitClickable();
         mainPage.signUpFreeButton.click();
 
         signUpModal.signUpFullNameInput.waitIsVisible();
         signUpModal.signUpFullNameInput.setText(fullName);
         signUpModal.signUpPasswordInput.setText(password);
         signUpModal.signUpTermsCB.check();
+        signUpModal.signUpButton.click();
+
+        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
+
+    }
+
+    @Test
+    @Order(4)
+    @DisplayName("Verify if an user can SignUp if the checkbox of [Terms of Service] is unchecked.")
+    @Description("This test case is to verify it the user can SignUp after filling all the fields and uncheck the [Terms of Service] checkbox.")
+    @Owner("Federico Padin")
+    public void verifyTermsOfServiceUnchecked(){
+
+        mainPage.signUpFreeButton.waitClickable();
+        mainPage.signUpFreeButton.click();
+
+        signUpModal.signUpFullNameInput.waitIsVisible();
+        signUpModal.signUpFullNameInput.setText(fullName);
+        signUpModal.signUpEmailInput.setText(email);
+        signUpModal.signUpPasswordInput.setText(password);
         signUpModal.signUpButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
