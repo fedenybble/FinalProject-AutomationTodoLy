@@ -26,6 +26,7 @@ public class TestBaseTodoLy {
     LoginModal loginModal = new LoginModal();
     SettingsModal settingsModal = new SettingsModal();
     ProjectSection projectSection = new ProjectSection();
+    TaskSection taskSection = new TaskSection();
 
     @BeforeEach
     public void setup() throws InterruptedException {
