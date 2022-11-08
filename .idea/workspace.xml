@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Automated Test Cases for Sign Up with Assertions.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestCasesForLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginModal.java" afterDir="false" />
+    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Login Test Case Automated.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestResultExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/TestBaseTodoLy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestBaseTodoLy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/TestCasesForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestCasesForLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +86,7 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCasesForLogin.verifyLoginCorrectly">
+  <component name="RunManager" selected="Gradle.TestCasesForLogin.verifyLoginPwdEmpty">
     <configuration name="TestCasesForLogin.verifyLoginCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -95,6 +101,52 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;cleanTest.TestCasesForLogin.verifyLoginCorrectly&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCasesForLogin.verifyLoginEmptyEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cleanTest.TestCasesForLogin.verifyLoginEmptyEmail&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCasesForLogin.verifyLoginPwdEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cleanTest.TestCasesForLogin.verifyLoginPwdEmpty&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,59 +202,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCases.verifySameNameAndEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cleanTest.TestCases.verifySameNameAndEmail&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestCases.verifySignUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cleanTest.TestCases.verifySignUp&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginPwdEmpty" />
+        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginEmptyEmail" />
         <item itemvalue="Gradle.TestCasesForLogin.verifyLoginCorrectly" />
         <item itemvalue="Gradle.TestCasesForSignUp.verifyWithoutEmailField" />
         <item itemvalue="Gradle.TestCasesForSignUp.verifyTermsOfServiceUnchecked" />
-        <item itemvalue="Gradle.TestCases.verifySignUp" />
-        <item itemvalue="Gradle.TestCases.verifySameNameAndEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667854363558</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Login Test Case Automated.">
+      <created>1667855711123</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667855711123</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,6 +295,7 @@
     <MESSAGE value="New changes" />
     <MESSAGE value="Test Cases for Sign Up" />
     <MESSAGE value="Automated Test Cases for Sign Up with Assertions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Automated Test Cases for Sign Up with Assertions." />
+    <MESSAGE value="Login Test Case Automated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Test Case Automated." />
   </component>
 </project>
