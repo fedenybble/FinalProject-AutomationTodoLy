@@ -232,6 +232,7 @@ public class TestCasesForProject extends TestBaseTodoLy{
     @Order(7)
     @DisplayName("Verify if the user can set a new icon to an existing Project")
     @Description("This test case is to verify if the user can select an existing project and set a new icon. ")
+    @Owner("Federico Padin")
     public void setNewIconToProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -258,9 +259,49 @@ public class TestCasesForProject extends TestBaseTodoLy{
         projectSection.findOptionIconForProject(newProjectName).click();
         projectSection.ballIcon.click();
 
+        Assertions.assertTrue(projectSection.ballIconLabel.isControlDisplayed(), "ERROR: The ball icon was not setted.");
+
         Thread.sleep(5000);
 
+    }
 
+    @Test
+    @Order(8)
+    @DisplayName("Verify if the option [Add item above] works correctly and adds a new Project above the selected one")
+    @Description("This test case is to verify if the user can add a new project above of the one selected.")
+    @Owner("Federico Padin")
+    public void verifyAddItemAboveButton() throws InterruptedException {
+
+        String newProjectName = "newProject"+new Date().getTime();
+        String newProjectNameAbove = "projectAbove"+new Date().getTime();
+
+        mainPage.loginButton.waitClickable();
+        mainPage.loginButton.click();
+
+        loginModal.loginEmailInput.waitIsVisible();
+        loginModal.loginEmailInput.setText(email);
+        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginButton.click();
+
+        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
+
+        projectSection.addNewProjectButton.waitClickable();
+        projectSection.addNewProjectButton.click();
+        projectSection.addNewProjectInput.waitIsVisible();
+        projectSection.addNewProjectInput.setText(newProjectName);
+        projectSection.addButton.click();
+
+        Assertions.assertEquals(newProjectName, projectSection.findLastProjectCreated(newProjectName).getText(), "ERR0R: The project was not created. ");
+
+        projectSection.findLastProjectCreated(newProjectName).click();
+        projectSection.findOptionIconForProject(newProjectName).click();
+        projectSection.addItemAboveButton.click();
+        projectSection.nameNewProjectAboveInput.setText(newProjectNameAbove);
+        projectSection.saveNewProjectAboveButton.click();
+
+        Assertions.assertEquals(newProjectNameAbove, projectSection.findNewProjectAbove(newProjectNameAbove).getText(), "ERROR: The project was not created above the project selected");
+
+        Thread.sleep(5000);
     }
 
 }
