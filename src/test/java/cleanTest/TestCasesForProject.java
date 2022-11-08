@@ -188,4 +188,79 @@ public class TestCasesForProject extends TestBaseTodoLy{
         Thread.sleep(3000);
     }
 
+    @Test
+    @Order(6)
+    @DisplayName("Verify if the project name can be edited")
+    @Description("This test case is to verify if the project name can be edited by the user. ")
+    public void verifyEditProject() throws InterruptedException {
+
+        String newProjectName = "newProject"+new Date().getTime();
+        String editProjectName = "NameEdited";
+
+        mainPage.loginButton.waitClickable();
+        mainPage.loginButton.click();
+
+        loginModal.loginEmailInput.waitIsVisible();
+        loginModal.loginEmailInput.setText(email);
+        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginButton.click();
+
+        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
+
+        projectSection.addNewProjectButton.waitClickable();
+        projectSection.addNewProjectButton.click();
+        projectSection.addNewProjectInput.waitIsVisible();
+        projectSection.addNewProjectInput.setText(newProjectName);
+        projectSection.addButton.click();
+
+        Assertions.assertEquals(newProjectName, projectSection.findLastProjectCreated(newProjectName).getText(), "ERR0R: The project was not created. ");
+
+        projectSection.findLastProjectCreated(newProjectName).click();
+        projectSection.findOptionIconForProject(newProjectName).click();
+        projectSection.editOptionButton.click();
+        projectSection.editInputProjectName.clear();
+        projectSection.editInputProjectName.setText(editProjectName);
+        String projectWithNameEdited = projectSection.editInputProjectName.getText();
+        projectSection.saveIconButton.click();
+
+        Assertions.assertEquals(editProjectName, projectWithNameEdited, "ERROR: The name was not edited.");
+
+        Thread.sleep(5000);
+    }
+
+    @Test
+    @Order(7)
+    @DisplayName("Verify if the user can set a new icon to an existing Project")
+    @Description("This test case is to verify if the user can select an existing project and set a new icon. ")
+    public void setNewIconToProject() throws InterruptedException {
+
+        String newProjectName = "newProject"+new Date().getTime();
+
+        mainPage.loginButton.waitClickable();
+        mainPage.loginButton.click();
+
+        loginModal.loginEmailInput.waitIsVisible();
+        loginModal.loginEmailInput.setText(email);
+        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginButton.click();
+
+        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
+
+        projectSection.addNewProjectButton.waitClickable();
+        projectSection.addNewProjectButton.click();
+        projectSection.addNewProjectInput.waitIsVisible();
+        projectSection.addNewProjectInput.setText(newProjectName);
+        projectSection.addButton.click();
+
+        Assertions.assertEquals(newProjectName, projectSection.findLastProjectCreated(newProjectName).getText(), "ERR0R: The project was not created. ");
+
+        projectSection.findLastProjectCreated(newProjectName).click();
+        projectSection.findOptionIconForProject(newProjectName).click();
+        projectSection.ballIcon.click();
+
+        Thread.sleep(5000);
+
+
+    }
+
 }
