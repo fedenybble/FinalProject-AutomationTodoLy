@@ -11,8 +11,8 @@ public class Chrome implements IBrowser{
     public WebDriver create() {
         System.setProperty("webdriver.chrome.driver","src/test/resources/driver/chromedriver");
         ChromeDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         return driver;
     }
 }

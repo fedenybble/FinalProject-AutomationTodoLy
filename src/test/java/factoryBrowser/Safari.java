@@ -11,8 +11,8 @@ public class Safari implements IBrowser{
     public WebDriver create() {
         //System.setProperty("webdriver.chrome.driver","src/test/resources/driver/chromedriver");
         SafariDriver driver = new SafariDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         return driver;
     }
 }
