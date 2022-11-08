@@ -25,6 +25,7 @@ public class TestBaseTodoLy {
     NavBar navBar = new NavBar();
     LoginModal loginModal = new LoginModal();
     SettingsModal settingsModal = new SettingsModal();
+    ProjectSection projectSection = new ProjectSection();
 
     @BeforeEach
     public void setup() throws InterruptedException {
@@ -45,7 +46,5 @@ public class TestBaseTodoLy {
     public void cleanup(){
         Session.getInstance().closeBrowser();
     }
-
-
 
 }
