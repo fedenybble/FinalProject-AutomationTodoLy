@@ -6,6 +6,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import singletonSession.Session;
+
+import java.time.Duration;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class TestCasesForLogin extends TestBaseTodoLy {
 
@@ -63,6 +68,29 @@ public class TestCasesForLogin extends TestBaseTodoLy {
 
         loginModal.loginEmailInput.waitIsVisible();
         loginModal.loginEmailInput.setText(email);
+        loginModal.loginButton.click();
+
+        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "The user could not login");
+
+        Thread.sleep(5000);
+
+    }
+
+    @Test
+    @Order(4)
+    @DisplayName("Verify if the user can login with a non-register account.")
+    @Description("This test case is to verify if the user can login with an account that is not registered.")
+    @Owner("Federico Padin")
+    public void verifyNonRegisterAccount() throws InterruptedException {
+
+        String emailNotRegistered = new Date().getTime()+"@gmail.com";
+
+        mainPage.loginButton.waitClickable();
+        mainPage.loginButton.click();
+
+        loginModal.loginEmailInput.waitIsVisible();
+        loginModal.loginEmailInput.setText(emailNotRegistered);
+        loginModal.loginPasswordInput.setText(password);
         loginModal.loginButton.click();
 
         Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "The user could not login");

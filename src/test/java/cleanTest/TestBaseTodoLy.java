@@ -8,13 +8,11 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import pages.LoginModal;
-import pages.MainPage;
-import pages.NavBar;
-import pages.SignUpModal;
+import pages.*;
 import singletonSession.Session;
 import utils.GetProperties;
 
+import java.time.Duration;
 import java.util.Date;
 
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
@@ -26,9 +24,13 @@ public class TestBaseTodoLy {
     SignUpModal signUpModal = new SignUpModal();
     NavBar navBar = new NavBar();
     LoginModal loginModal = new LoginModal();
+    SettingsModal settingsModal = new SettingsModal();
 
     @BeforeEach
-    public void setup(){
+    public void setup() throws InterruptedException {
+
+        Thread.sleep(5000);
+
         allureEnvironmentWriter(
                 ImmutableMap.<String, String>builder()
                         .put("Browser", GetProperties.getInstance().getBrowser())
