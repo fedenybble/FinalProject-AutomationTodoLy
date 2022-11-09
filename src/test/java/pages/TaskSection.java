@@ -11,6 +11,7 @@ public class TaskSection {
     public Button newTaskAddButton = new Button(By.id("NewItemAddButton"), "[newTaskAddButton] in Task Section");
     public Button optionButtonTask = new Button(By.xpath("//div[@id=\"ItemListPlaceHolder\"]//img[@src=\"/Images/dropdown.png\"]"), "[optionButtonTask] in Task Section");
     public Button deleteTaskOption = new Button(By.xpath("//ul[@id=\"itemContextMenu\"]//a[@href=\"#delete\"]"), "[deleteTaskOption] in Task Section");
+    public Button setPriorityOneOption = new Button(By.xpath("//div[@id=\"Div1\"]//span[@iconid=\"1\"]"), "[setPriorityOneOption] in Task Section");
     public Label findTaskCreated(String name){
 
         Label taskCreated = new Label(By.xpath("//ul[@id=\"mainItemList\"]//div[text()='" +name+ "']"), "[taskCreated] in Task Section");
