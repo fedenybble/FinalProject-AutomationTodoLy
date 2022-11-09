@@ -8,6 +8,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import singletonSession.Session;
+import utils.GetProperties;
 
 import java.time.Duration;
 import java.util.Date;
@@ -15,8 +16,8 @@ import java.util.concurrent.TimeUnit;
 
 public class TestCasesForLogin extends TestBaseTodoLy {
 
-    String email = "ejemplo@ejemplo.com";
-    String password = "ejemplo";
+//    String email = "ejemplo@ejemplo.com";
+//    String password = "ejemplo";
 
     @Test
     @Order(1)
@@ -29,8 +30,8 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -49,10 +50,10 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "The user could not login");
+        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
 
         Thread.sleep(3000);
     }
@@ -68,10 +69,10 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "The user could not login");
+        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
 
         Thread.sleep(3000);
 
@@ -91,10 +92,10 @@ public class TestCasesForLogin extends TestBaseTodoLy {
 
         loginModal.loginEmailInput.waitIsVisible();
         loginModal.loginEmailInput.setText(emailNotRegistered);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "The user could not login");
+        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
 
         Thread.sleep(3000);
 

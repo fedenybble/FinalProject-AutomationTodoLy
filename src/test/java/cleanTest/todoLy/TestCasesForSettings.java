@@ -5,6 +5,7 @@ import io.qameta.allure.Owner;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.*;
 import singletonSession.Session;
+import utils.GetProperties;
 
 import java.util.Date;
 
@@ -24,8 +25,8 @@ public class TestCasesForSettings extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -64,8 +65,8 @@ public class TestCasesForSettings extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");

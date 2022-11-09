@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import utils.GetProperties;
 
 import java.util.Date;
 
@@ -30,8 +31,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");

@@ -12,6 +12,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCaseForLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCaseForLogout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProjectSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProjectSection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +104,7 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCaseForLogout.verifyLogout">
+  <component name="RunManager" selected="Gradle.TestCasesForProject.verifyNewProjectWithoutName">
     <configuration name="TestCaseForLogout.verifyLogout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -114,6 +119,52 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;cleanTest.todoLy.TestCaseForLogout.verifyLogout&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCasesForLogin.verifyLoginCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyLoginCorrectly&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCasesForProject.verifyNewProjectWithoutName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForProject.verifyNewProjectWithoutName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,29 +197,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForTask.setDueDateToTask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cleanTest.TestCasesForTask.setDueDateToTask&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="TestCasesForTask.verifyLengthTaskNameField" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -192,36 +220,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForTask.verifySetPriority" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cleanTest.TestCasesForTask.verifySetPriority&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestCasesForProject.verifyNewProjectWithoutName" />
+        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginCorrectly" />
         <item itemvalue="Gradle.TestCaseForLogout.verifyLogout" />
         <item itemvalue="Gradle.TestCasesForSettings.verifyDeleteAccount" />
         <item itemvalue="Gradle.TestCasesForTask.verifyLengthTaskNameField" />
-        <item itemvalue="Gradle.TestCasesForTask.setDueDateToTask" />
-        <item itemvalue="Gradle.TestCasesForTask.verifySetPriority" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668006793734</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Reordenando la estructura">
+      <created>1668007834894</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668007834894</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

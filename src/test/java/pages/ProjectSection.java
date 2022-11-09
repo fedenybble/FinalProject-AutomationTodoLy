@@ -24,6 +24,11 @@ public class ProjectSection {
         return lastProjectCreated;
     }
 
+    public Button findProjectCreated(String name){
+        Button projectCreated = new Button(By.xpath("(//li//td[text()='"+name+"'])[last()]"), "[projectCreated] in Project Section");
+        return projectCreated;
+    }
+
     public Button findOptionIconForProject(String name){
         Button optionIconButton = new Button(By.xpath("//li[last()]//td[text()='" + name + "']//following-sibling::td//div[@style=\"display: block;\"]//img[@src=\"/Images/dropdown.png\"]"), "[optionIconButton] in Project Section");
         return optionIconButton;

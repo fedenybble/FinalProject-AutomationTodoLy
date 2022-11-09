@@ -8,13 +8,14 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import io.qameta.allure.Description;
 import singletonSession.Session;
+import utils.GetProperties;
 
 import java.util.Date;
 
 public class TestCasesForProject extends TestBaseTodoLy {
 
-    String email = "ejemplo@ejemplo.com";
-    String password = "ejemplo";
+//    String email = "ejemplo@ejemplo.com";
+//    String password = "ejemplo";
 
 
     @Test
@@ -30,8 +31,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -61,8 +62,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -73,6 +74,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
         projectSection.addNewProjectInput.setText(newProjectName);
         projectSection.addButton.click();
 
+        Assertions.assertFalse(projectSection.findProjectCreated(newProjectName).isControlDisplayed(), "ERROR: The project was created with blank space.");
 //        Assertions.assertEquals(newProjectName, projectSection.findLastProjectCreated(newProjectName).getText(), "ERR0R: The project was not created. ");
 
     }
@@ -90,8 +92,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -132,8 +134,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -163,8 +165,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -202,8 +204,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -242,8 +244,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -280,8 +282,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
