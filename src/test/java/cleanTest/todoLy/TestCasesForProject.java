@@ -1,5 +1,6 @@
-package cleanTest;
+package cleanTest.todoLy;
 
+import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +11,7 @@ import singletonSession.Session;
 
 import java.util.Date;
 
-public class TestCasesForProject extends TestBaseTodoLy{
+public class TestCasesForProject extends TestBaseTodoLy {
 
     String email = "ejemplo@ejemplo.com";
     String password = "ejemplo";
@@ -43,7 +44,7 @@ public class TestCasesForProject extends TestBaseTodoLy{
 
         Assertions.assertEquals(newProjectName, projectSection.findLastProjectCreated(newProjectName).getText(), "ERR0R: The project was not created. ");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -114,7 +115,7 @@ public class TestCasesForProject extends TestBaseTodoLy{
         Assertions.assertEquals(firstProjectCreated, secondProjectCreated, "ERROR: Already exists a project with that name.");
 
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -145,7 +146,7 @@ public class TestCasesForProject extends TestBaseTodoLy{
 
         Assertions.assertEquals(projectName, projectSection.findLastProjectCreated(projectName).getText(), "ERR0R: The project was not created. ");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -225,7 +226,7 @@ public class TestCasesForProject extends TestBaseTodoLy{
 
         Assertions.assertEquals(editProjectName, projectWithNameEdited, "ERROR: The name was not edited.");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
     @Test
@@ -261,7 +262,7 @@ public class TestCasesForProject extends TestBaseTodoLy{
 
         Assertions.assertTrue(projectSection.ballIconLabel.isControlDisplayed(), "ERROR: The ball icon was not setted.");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -301,7 +302,7 @@ public class TestCasesForProject extends TestBaseTodoLy{
 
         Assertions.assertEquals(newProjectNameAbove, projectSection.findNewProjectAbove(newProjectNameAbove).getText(), "ERROR: The project was not created above the project selected");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
 }

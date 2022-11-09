@@ -1,5 +1,6 @@
-package cleanTest;
+package cleanTest.todoLy;
 
+import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Owner;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.*;
@@ -132,7 +133,7 @@ public class TestCasesForSettings extends TestBaseTodoLy {
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -178,7 +179,7 @@ public class TestCasesForSettings extends TestBaseTodoLy {
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The account was deleted successfully.");
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
     }
 

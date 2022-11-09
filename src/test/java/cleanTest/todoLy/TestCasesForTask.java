@@ -1,5 +1,6 @@
-package cleanTest;
+package cleanTest.todoLy;
 
+import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
@@ -9,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Date;
 
-public class TestCasesForTask extends TestBaseTodoLy{
+public class TestCasesForTask extends TestBaseTodoLy {
 
 
     String email = "ejemplo@ejemplo.com";
@@ -50,7 +51,7 @@ public class TestCasesForTask extends TestBaseTodoLy{
 
         Assertions.assertEquals(taskName, taskSection.findTaskCreated(taskName).getText(), "ERROR: The task was not created. ");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -96,7 +97,7 @@ public class TestCasesForTask extends TestBaseTodoLy{
 
         Assertions.assertTrue(taskSection.findNewTaskCreated(taskName).isControlDisplayed(), "ERROR: The task was not deleted. ");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -144,7 +145,7 @@ public class TestCasesForTask extends TestBaseTodoLy{
 
         Assertions.assertEquals(expectedStyle, actualStyle, "ERROR: The task does not have Priority = 1. ");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
 

@@ -1,5 +1,6 @@
-package cleanTest;
+package cleanTest.todoLy;
 
+import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
@@ -16,7 +17,7 @@ public class TestCaseForLogout extends TestBaseTodoLy {
     @DisplayName("Verify if the user can Logout. ")
     @Description("This test case is to verify if the usser can logout after being logged in. ")
     @Owner("Federico Padin")
-    public void verifyLogout(){
+    public void verifyLogout() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
         mainPage.loginButton.click();
@@ -32,6 +33,8 @@ public class TestCaseForLogout extends TestBaseTodoLy {
         navBar.navBarLogoutButton.click();
 
         Assertions.assertTrue(mainPage.loginButton.isControlDisplayed(), "ERROR: The user failed to logout. ");
+
+        Thread.sleep(3000);
 
     }
 

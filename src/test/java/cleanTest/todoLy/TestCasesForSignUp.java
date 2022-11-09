@@ -1,5 +1,6 @@
-package cleanTest;
+package cleanTest.todoLy;
 
+import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
@@ -34,7 +35,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
     @Test
@@ -57,7 +58,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -79,7 +80,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -102,7 +103,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
         // Assertions.assertFalse(mainPage.errorMessageText.isControlDisplayed(), "ERROR: The user was not registered.");
        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
 
     }
