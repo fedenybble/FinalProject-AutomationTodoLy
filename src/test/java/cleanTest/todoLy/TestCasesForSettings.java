@@ -1,6 +1,7 @@
 package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.*;
@@ -19,6 +20,7 @@ public class TestCasesForSettings extends TestBaseTodoLy {
     @DisplayName("Verify if the user can edit the 'First Day of Week'")
     @Description("This test case is to verify if the user can edit the “First Day of Week” from his account.")
     @Owner("Federico Padin")
+    @Epic("Settings")
     public void editFirstDayOfWeek() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -57,6 +59,7 @@ public class TestCasesForSettings extends TestBaseTodoLy {
     @DisplayName("Verify if the user can edit his full name")
     @Description("This test case is to verify if the user can edit his full name in [Settings] modal")
     @Owner("Federico Padin")
+    @Epic("Settings")
     public void editFullName() throws InterruptedException {
 
         String newName = "name"+new Date().getTime();
@@ -93,6 +96,7 @@ public class TestCasesForSettings extends TestBaseTodoLy {
     @DisplayName("Verify if the user can change his password.")
     @Description("This test case is to verify if the user can change his password correctly.")
     @Owner("Federico Padin")
+    @Epic("Settings")
     public void editPassword() throws InterruptedException {
 
         String fullName = "newName"+new Date().getTime();
@@ -143,6 +147,7 @@ public class TestCasesForSettings extends TestBaseTodoLy {
     @DisplayName("Verify if the user can delete his account")
     @Description("This test case is to verify if the user can delete his account. ")
     @Owner("Federico Padin")
+    @Epic("Settings")
     public void verifyDeleteAccount() throws InterruptedException {
 
         String fullName = "newName"+new Date().getTime();

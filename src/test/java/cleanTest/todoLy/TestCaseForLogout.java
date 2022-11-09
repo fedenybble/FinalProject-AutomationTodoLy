@@ -2,6 +2,7 @@ package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -14,6 +15,7 @@ public class TestCaseForLogout extends TestBaseTodoLy {
     @DisplayName("Verify if the user can Logout. ")
     @Description("This test case is to verify if the usser can logout after being logged in. ")
     @Owner("Federico Padin")
+    @Epic("Logout")
     public void verifyLogout() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();

@@ -2,6 +2,7 @@ package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -24,6 +25,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @DisplayName("Verify if the user can login correctly.")
     @Description("This test case is to verify if the user can login to the page correctly with a registered account.")
     @Owner("Federico Padin")
+    @Epic("Login")
     public void verifyLoginCorrectly() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -44,6 +46,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @DisplayName("Verify if the user can login with the [Email] field empty.")
     @Description("This test case is to verify if the user can login if the [Email] field empty.")
     @Owner("Federico Padin")
+    @Epic("Login")
     public void verifyLoginEmptyEmail() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -63,6 +66,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @DisplayName("Verify if the user can login with the [Password] field empty.")
     @Description("This test case is to verify if the user can login if he leaves the [Password] field empty and clicks [Login] button.")
     @Owner("Federico Padin")
+    @Epic("Login")
     public void verifyLoginPwdEmpty() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -83,6 +87,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @DisplayName("Verify if the user can login with a non-register account.")
     @Description("This test case is to verify if the user can login with an account that is not registered.")
     @Owner("Federico Padin")
+    @Epic("Login")
     public void verifyNonRegisterAccount() throws InterruptedException {
 
         String emailNotRegistered = new Date().getTime()+"@gmail.com";

@@ -2,6 +2,7 @@ package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -21,6 +22,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @DisplayName("Verify if an user can SignUp correctly.")
     @Description("This test case is to verify that an user can sign up correctly after filling all the fields with valid data.")
     @Owner("Federico Padin")
+    @Epic("SignUp")
     public void verifySignUp() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();
@@ -43,6 +45,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @DisplayName("Verify if an user can set the same [Full Name] and [Email] in SignUp modal.")
     @Description("This test case is to verify if the user can enter an email in [Full Name] field and repeat the same input in [Email] field.")
     @Owner("Federico Padin")
+    @Epic("SignUp")
     public void verifySameNameAndEmail() throws InterruptedException {
 
 
@@ -67,6 +70,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @DisplayName("Verify if the user can SignUp without filling the [Email] field.")
     @Description("This test case is to verify if the user can SignUp without filling the [Email] field.")
     @Owner("Federico Padin")
+    @Epic("SignUp")
     public void verifyWithoutEmailField() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();
@@ -89,6 +93,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @DisplayName("Verify if an user can SignUp if the checkbox of [Terms of Service] is unchecked.")
     @Description("This test case is to verify it the user can SignUp after filling all the fields and uncheck the [Terms of Service] checkbox.")
     @Owner("Federico Padin")
+    @Epic("SignUp")
     public void verifyTermsOfServiceUnchecked() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();

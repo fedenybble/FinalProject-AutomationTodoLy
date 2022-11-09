@@ -2,6 +2,7 @@ package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -13,15 +14,12 @@ import java.util.Date;
 
 public class TestCasesForTask extends TestBaseTodoLy {
 
-
-    String email = "ejemplo@ejemplo.com";
-    String password = "ejemplo";
-
     @Test
     @Order(1)
     @DisplayName("Verify if a new task can be created")
     @Description("This test case is to verify if a new task can be created by the user")
     @Owner("Federico Padin")
+    @Epic("Task")
     public void verifyCreateNewTask() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -61,6 +59,7 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @DisplayName("Verify if a task can be deleted")
     @Description("This test case is to verify if the user can delete an existing task.")
     @Owner("Federico Padin")
+    @Epic("Task")
     public void verifyDeleteTask() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -70,8 +69,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -107,6 +106,7 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @DisplayName("Verify if the user can set a [Priority] to a task")
     @Description("This test case is to verify if the user can set a [Priority] to a task.")
     @Owner("Federico Padin")
+    @Epic("Task")
     public void verifySetPriority() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -117,8 +117,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
@@ -154,6 +154,7 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @Order(4)
     @DisplayName("Verify if the [Task Name] field has a maximum length")
     @Owner("Federico Padin")
+    @Epic("Task")
     public void verifyLengthTaskNameField() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -164,8 +165,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");

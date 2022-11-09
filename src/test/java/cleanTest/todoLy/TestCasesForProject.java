@@ -1,6 +1,7 @@
 package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -14,15 +15,13 @@ import java.util.Date;
 
 public class TestCasesForProject extends TestBaseTodoLy {
 
-//    String email = "ejemplo@ejemplo.com";
-//    String password = "ejemplo";
-
 
     @Test
     @Order(1)
     @DisplayName("Verify if an user can create a new project.")
     @Description("This test case is to verify if the user can create a new project after being logged in.")
     @Owner("Federico Padin")
+    @Epic("Project")
     public void verifyNewProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -54,6 +53,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @DisplayName("Verify if a project can be created by setting ' ' as name.")
     @Description("This test case is to verify if the user can create a new project by setting ' ' as a name and clicking [Add] button.")
     @Owner("Federico Padin")
+    @Epic("Project")
     public void verifyNewProjectWithoutName(){
 
         String newProjectName = " ";
@@ -84,6 +84,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @DisplayName("Verify if an user can create two (or more) projects with the same name")
     @Description("This test case is to verify if the user can create two projects (or more) with the same name")
     @Owner("Federico Padin")
+    @Epic("Project")
     public void verifyProjectsWithSameName() throws InterruptedException {
 
         String newProjectName = "NewProjectName";
@@ -126,6 +127,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @DisplayName("Verify if the user can create a project that has 300 character in the name")
     @Description("This test case is to verify if a project can be created with a name that has 300 characters")
     @Owner("Federico Padin")
+    @Epic("Project")
     public void projectNameWith300Characters() throws InterruptedException {
 
         String projectName = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
@@ -157,6 +159,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @DisplayName("Verify if a project can be deleted")
     @Description("This test case is to verify if the user can delete an existing project")
     @Owner("Federico Padin")
+    @Epic("Project")
     public void deleteProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -195,6 +198,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Order(6)
     @DisplayName("Verify if the project name can be edited")
     @Description("This test case is to verify if the project name can be edited by the user. ")
+    @Owner("Federico Padin")
+    @Epic("Project")
     public void verifyEditProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -223,7 +228,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
         projectSection.editOptionButton.click();
         projectSection.editInputProjectName.clear();
         projectSection.editInputProjectName.setText(editProjectName);
-        String projectWithNameEdited = projectSection.editInputProjectName.getText();
+        String projectWithNameEdited = projectSection.findLastProjectCreated(newProjectName).getText();
         projectSection.saveIconButton.click();
 
         Assertions.assertEquals(editProjectName, projectWithNameEdited, "ERROR: The name was not edited.");
@@ -236,6 +241,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @DisplayName("Verify if the user can set a new icon to an existing Project")
     @Description("This test case is to verify if the user can select an existing project and set a new icon. ")
     @Owner("Federico Padin")
+    @Epic("Project")
     public void setNewIconToProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -273,6 +279,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @DisplayName("Verify if the option [Add item above] works correctly and adds a new Project above the selected one")
     @Description("This test case is to verify if the user can add a new project above of the one selected.")
     @Owner("Federico Padin")
+    @Epic("Project")
     public void verifyAddItemAboveButton() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
