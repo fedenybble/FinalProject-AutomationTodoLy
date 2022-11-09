@@ -35,6 +35,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
         loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
+        navBar.navBarLogoutButton.waitIsVisible();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
 

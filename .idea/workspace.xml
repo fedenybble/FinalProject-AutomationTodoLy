@@ -11,7 +11,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/factoryBrowser/Safari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factoryBrowser/Safari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +102,7 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCasesForProject.verifyEditProject">
+  <component name="RunManager" selected="Gradle.TestCasesForSignUp.verifySignUp">
     <configuration name="TestCaseForLogout.verifyLogout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -123,7 +126,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForProject.projectNameWith300Characters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCasesForLogin.verifyLoginCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +139,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForProject.projectNameWith300Characters&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyLoginCorrectly&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,7 +172,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForProject.verifyNewProjectWithoutName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCasesForSignUp.verifySignUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +185,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForProject.verifyNewProjectWithoutName&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForSignUp.verifySignUp&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -217,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestCasesForSignUp.verifySignUp" />
+        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginCorrectly" />
         <item itemvalue="Gradle.TestCasesForProject.verifyEditProject" />
         <item itemvalue="Gradle.Tests in 'cleanTest.todoLy'" />
         <item itemvalue="Gradle.TestCaseForLogout.verifyLogout" />
-        <item itemvalue="Gradle.TestCasesForProject.projectNameWith300Characters" />
-        <item itemvalue="Gradle.TestCasesForProject.verifyNewProjectWithoutName" />
       </list>
     </recent_temporary>
   </component>
@@ -381,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668016799327</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="@Epic added and one Assertion fixed.">
+      <created>1668017721340</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668017721340</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

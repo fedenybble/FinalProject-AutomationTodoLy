@@ -34,6 +34,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
         signUpModal.signUpPasswordInput.setText(password);
         signUpModal.signUpTermsCB.check();
         signUpModal.signUpButton.click();
+        navBar.navBarLogoutButton.waitIsVisible();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
 
