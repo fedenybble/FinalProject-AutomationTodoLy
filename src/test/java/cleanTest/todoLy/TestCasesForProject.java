@@ -228,8 +228,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
         projectSection.editOptionButton.click();
         projectSection.editInputProjectName.clear();
         projectSection.editInputProjectName.setText(editProjectName);
-        String projectWithNameEdited = projectSection.findLastProjectCreated(newProjectName).getText();
         projectSection.saveIconButton.click();
+        String projectWithNameEdited = projectSection.findLastProjectCreated(editProjectName).getText();
 
         Assertions.assertEquals(editProjectName, projectWithNameEdited, "ERROR: The name was not edited.");
 
