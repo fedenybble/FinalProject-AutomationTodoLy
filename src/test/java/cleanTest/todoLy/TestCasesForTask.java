@@ -184,7 +184,6 @@ public class TestCasesForTask extends TestBaseTodoLy {
         taskSection.newTaskAddButton.click();
 
         Assertions.assertTrue(taskName.length()<300, "ERROR: The task was created");
-        //Assertions.assertEquals(taskName, taskSection.findTaskCreated(taskName).getText(), "ERROR: The task was not created. ");
 
         Thread.sleep(3000);
 

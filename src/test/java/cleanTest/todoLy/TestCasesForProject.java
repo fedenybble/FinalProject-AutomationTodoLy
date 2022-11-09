@@ -148,8 +148,6 @@ public class TestCasesForProject extends TestBaseTodoLy {
 
         Assertions.assertTrue(projectName.length()<300, "ERROR: The project was created");
 
-        //Assertions.assertEquals(projectName, projectSection.findLastProjectCreated(projectName).getText(), "ERR0R: The project was not created. ");
-
         Thread.sleep(3000);
 
     }
