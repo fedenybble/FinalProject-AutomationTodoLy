@@ -148,4 +148,43 @@ public class TestCasesForTask extends TestBaseTodoLy{
     }
 
 
+    @Test
+    @Order(4)
+    @DisplayName("Verify if the [Task Name] field has a maximum length")
+    @Owner("Federico Padin")
+    public void verifyLengthTaskNameField() throws InterruptedException {
+
+        String newProjectName = "newProject"+new Date().getTime();
+        String taskName = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+
+
+        mainPage.loginButton.waitClickable();
+        mainPage.loginButton.click();
+
+        loginModal.loginEmailInput.waitIsVisible();
+        loginModal.loginEmailInput.setText(email);
+        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginButton.click();
+
+        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
+
+        projectSection.addNewProjectButton.waitClickable();
+        projectSection.addNewProjectButton.click();
+        projectSection.addNewProjectInput.waitIsVisible();
+        projectSection.addNewProjectInput.setText(newProjectName);
+        projectSection.addButton.click();
+
+        Assertions.assertEquals(newProjectName, projectSection.findLastProjectCreated(newProjectName).getText(), "ERR0R: The project was not created. ");
+
+        taskSection.newTaskNameInput.waitIsVisible();
+        taskSection.newTaskNameInput.click();
+        taskSection.newTaskNameInput.setText(taskName);
+        taskSection.newTaskAddButton.click();
+
+        Assertions.assertEquals(taskName, taskSection.findTaskCreated(taskName).getText(), "ERROR: The task was not created. ");
+
+        Thread.sleep(3000);
+
+
+    }
 }
