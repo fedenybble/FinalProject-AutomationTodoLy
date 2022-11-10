@@ -1,13 +1,8 @@
 package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.*;
 import singletonSession.Session;
 import utils.GetProperties;
 
@@ -22,6 +17,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can create a new project after being logged in.")
     @Owner("Federico Padin")
     @Epic("Project")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Project")
     public void verifyNewProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -54,6 +51,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can create a new project by setting ' ' as a name and clicking [Add] button.")
     @Owner("Federico Padin")
     @Epic("Project")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Project")
     public void verifyNewProjectWithoutName(){
 
         String newProjectName = " ";
@@ -85,6 +84,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can create two projects (or more) with the same name")
     @Owner("Federico Padin")
     @Epic("Project")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Project")
     public void verifyProjectsWithSameName() throws InterruptedException {
 
         String newProjectName = "NewProjectName";
@@ -128,6 +129,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Description("This test case is to verify if a project can be created with a name that has 300 characters")
     @Owner("Federico Padin")
     @Epic("Project")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Project")
     public void projectNameWith300Characters() throws InterruptedException {
 
         String projectName = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
@@ -160,6 +163,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can delete an existing project")
     @Owner("Federico Padin")
     @Epic("Project")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Project")
     public void deleteProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -200,6 +205,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Description("This test case is to verify if the project name can be edited by the user. ")
     @Owner("Federico Padin")
     @Epic("Project")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Project")
     public void verifyEditProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -242,6 +249,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can select an existing project and set a new icon. ")
     @Owner("Federico Padin")
     @Epic("Project")
+    @Severity(SeverityLevel.MINOR)
+    @Tag("Project")
     public void setNewIconToProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -280,6 +289,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can add a new project above of the one selected.")
     @Owner("Federico Padin")
     @Epic("Project")
+    @Severity(SeverityLevel.NORMAL)
+    @Tag("Project")
     public void verifyAddItemAboveButton() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();

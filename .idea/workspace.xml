@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="@Epic added and one Assertion fixed.">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Waits were added">
+      <change afterPath="$PROJECT_DIR$/docker-compose-web.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCaseForLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCaseForLogout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factoryBrowser/Safari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factoryBrowser/Safari.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,16 +82,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/fede/Documents/Nybble /Automation/FinalProject-AutomationTodoLy/src/test/java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/fede/Documents/Nybble /Automation/FinalProject-AutomationTodoLy"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
@@ -391,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668017721340</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Waits were added">
+      <created>1668024296416</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668024296416</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,6 +423,7 @@
     <MESSAGE value="Reordenando la estructura" />
     <MESSAGE value=" New structure" />
     <MESSAGE value="@Epic added and one Assertion fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="@Epic added and one Assertion fixed." />
+    <MESSAGE value="Waits were added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Waits were added" />
   </component>
 </project>

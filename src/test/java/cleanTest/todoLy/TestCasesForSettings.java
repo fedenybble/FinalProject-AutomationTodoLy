@@ -3,6 +3,8 @@ package cleanTest.todoLy;
 import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.*;
 import singletonSession.Session;
@@ -21,6 +23,8 @@ public class TestCasesForSettings extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can edit the “First Day of Week” from his account.")
     @Owner("Federico Padin")
     @Epic("Settings")
+    @Severity(SeverityLevel.NORMAL)
+    @Tag("Settings")
     public void editFirstDayOfWeek() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -43,7 +47,6 @@ public class TestCasesForSettings extends TestBaseTodoLy {
         settingsModal.sundayDayOption.click();
         settingsModal.okButton.click();
 
-
         navBar.navBarSettingsButton.waitIsVisible();
         navBar.navBarSettingsButton.click();
         settingsModal.defaultSettingsTab.waitClickable();
@@ -60,6 +63,8 @@ public class TestCasesForSettings extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can edit his full name in [Settings] modal")
     @Owner("Federico Padin")
     @Epic("Settings")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Settings")
     public void editFullName() throws InterruptedException {
 
         String newName = "name"+new Date().getTime();
@@ -97,6 +102,8 @@ public class TestCasesForSettings extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can change his password correctly.")
     @Owner("Federico Padin")
     @Epic("Settings")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Settings")
     public void editPassword() throws InterruptedException {
 
         String fullName = "newName"+new Date().getTime();
@@ -148,6 +155,8 @@ public class TestCasesForSettings extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can delete his account. ")
     @Owner("Federico Padin")
     @Epic("Settings")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Settings")
     public void verifyDeleteAccount() throws InterruptedException {
 
         String fullName = "newName"+new Date().getTime();

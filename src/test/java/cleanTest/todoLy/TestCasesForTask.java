@@ -1,13 +1,8 @@
 package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
-import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.*;
 import utils.GetProperties;
 
 import java.util.Date;
@@ -20,6 +15,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @Description("This test case is to verify if a new task can be created by the user")
     @Owner("Federico Padin")
     @Epic("Task")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Task")
     public void verifyCreateNewTask() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -60,6 +57,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can delete an existing task.")
     @Owner("Federico Padin")
     @Epic("Task")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Task")
     public void verifyDeleteTask() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -107,6 +106,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can set a [Priority] to a task.")
     @Owner("Federico Padin")
     @Epic("Task")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Task")
     public void verifySetPriority() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -155,6 +156,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @DisplayName("Verify if the [Task Name] field has a maximum length")
     @Owner("Federico Padin")
     @Epic("Task")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Task")
     public void verifyLengthTaskNameField() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();

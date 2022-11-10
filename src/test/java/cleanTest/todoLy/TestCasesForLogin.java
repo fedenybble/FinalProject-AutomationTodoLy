@@ -1,13 +1,8 @@
 package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
-import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.*;
 import singletonSession.Session;
 import utils.GetProperties;
 
@@ -17,15 +12,14 @@ import java.util.concurrent.TimeUnit;
 
 public class TestCasesForLogin extends TestBaseTodoLy {
 
-//    String email = "ejemplo@ejemplo.com";
-//    String password = "ejemplo";
-
     @Test
     @Order(1)
     @DisplayName("Verify if the user can login correctly.")
     @Description("This test case is to verify if the user can login to the page correctly with a registered account.")
     @Owner("Federico Padin")
     @Epic("Login")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Login")
     public void verifyLoginCorrectly() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -48,6 +42,8 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can login if the [Email] field empty.")
     @Owner("Federico Padin")
     @Epic("Login")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Login")
     public void verifyLoginEmptyEmail() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -68,6 +64,8 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can login if he leaves the [Password] field empty and clicks [Login] button.")
     @Owner("Federico Padin")
     @Epic("Login")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Login")
     public void verifyLoginPwdEmpty() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -89,6 +87,8 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can login with an account that is not registered.")
     @Owner("Federico Padin")
     @Epic("Login")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Login")
     public void verifyNonRegisterAccount() throws InterruptedException {
 
         String emailNotRegistered = new Date().getTime()+"@gmail.com";

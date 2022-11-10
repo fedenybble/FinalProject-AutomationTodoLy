@@ -1,13 +1,8 @@
 package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
-import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.*;
 
 import java.util.Date;
 
@@ -23,6 +18,8 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Description("This test case is to verify that an user can sign up correctly after filling all the fields with valid data.")
     @Owner("Federico Padin")
     @Epic("SignUp")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("SignUp")
     public void verifySignUp() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();
@@ -47,8 +44,9 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can enter an email in [Full Name] field and repeat the same input in [Email] field.")
     @Owner("Federico Padin")
     @Epic("SignUp")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("SignUp")
     public void verifySameNameAndEmail() throws InterruptedException {
-
 
         mainPage.signUpFreeButton.waitClickable();
         mainPage.signUpFreeButton.click();
@@ -72,6 +70,8 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Description("This test case is to verify if the user can SignUp without filling the [Email] field.")
     @Owner("Federico Padin")
     @Epic("SignUp")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("SignUp")
     public void verifyWithoutEmailField() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();
@@ -95,6 +95,8 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Description("This test case is to verify it the user can SignUp after filling all the fields and uncheck the [Terms of Service] checkbox.")
     @Owner("Federico Padin")
     @Epic("SignUp")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("SignUp")
     public void verifyTermsOfServiceUnchecked() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();

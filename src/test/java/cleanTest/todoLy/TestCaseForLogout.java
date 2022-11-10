@@ -1,11 +1,10 @@
 package cleanTest.todoLy;
 
 import cleanTest.TestBaseTodoLy;
-import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Owner;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import utils.GetProperties;
 
@@ -16,6 +15,8 @@ public class TestCaseForLogout extends TestBaseTodoLy {
     @Description("This test case is to verify if the usser can logout after being logged in. ")
     @Owner("Federico Padin")
     @Epic("Logout")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Logout")
     public void verifyLogout() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
