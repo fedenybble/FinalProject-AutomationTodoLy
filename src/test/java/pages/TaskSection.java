@@ -7,11 +7,11 @@ import org.openqa.selenium.By;
 
 public class TaskSection {
 
-    public Input newTaskNameInput = new Input(By.id("NewItemContentInput"), "[newTaskNameInput] in Task Section");
-    public Button newTaskAddButton = new Button(By.id("NewItemAddButton"), "[newTaskAddButton] in Task Section");
-    public Button optionButtonTask = new Button(By.xpath("//div[@id=\"ItemListPlaceHolder\"]//img[@src=\"/Images/dropdown.png\"]"), "[optionButtonTask] in Task Section");
-    public Button deleteTaskOption = new Button(By.xpath("//ul[@id=\"itemContextMenu\"]//a[@href=\"#delete\"]"), "[deleteTaskOption] in Task Section");
-    public Button setPriorityOneOption = new Button(By.xpath("//div[@id=\"Div1\"]//span[@iconid=\"1\"]"), "[setPriorityOneOption] in Task Section");
+    public Input newTaskNameInput = new Input(By.id("NewItemContentInput"), "[newTaskNameInput] located Task Section");
+    public Button newTaskAddButton = new Button(By.id("NewItemAddButton"), "[newTaskAddButton] located Task Section");
+    public Button optionButtonTask = new Button(By.xpath("//div[@id=\"ItemListPlaceHolder\"]//img[@src=\"/Images/dropdown.png\"]"), "[optionButtonTask] located in Task Section");
+    public Button deleteTaskOption = new Button(By.xpath("//ul[@id=\"itemContextMenu\"]//a[@href=\"#delete\"]"), "[deleteTaskOption] located in Task Section -> Options");
+    public Button setPriorityOneOption = new Button(By.xpath("//div[@id=\"Div1\"]//span[@iconid=\"1\"]"), "[setPriorityOneOption] located in Task Section");
 
     public Label findTaskCreated(String name){
 

@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Waits were added">
-      <change afterPath="$PROJECT_DIR$/docker-compose-web.yml" afterDir="false" />
+    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="@Severity and @Tag added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCaseForLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCaseForLogout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/NavBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/NavBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProjectSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProjectSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SettingsModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SettingsModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignUpModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SignUpModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TaskSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TaskSection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668024296416</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="@Severity and @Tag added">
+      <created>1668087619988</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668087619988</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -424,6 +430,7 @@
     <MESSAGE value=" New structure" />
     <MESSAGE value="@Epic added and one Assertion fixed." />
     <MESSAGE value="Waits were added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Waits were added" />
+    <MESSAGE value="@Severity and @Tag added" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Severity and @Tag added" />
   </component>
 </project>
