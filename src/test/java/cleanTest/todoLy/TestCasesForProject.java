@@ -74,7 +74,6 @@ public class TestCasesForProject extends TestBaseTodoLy {
         projectSection.addButton.click();
 
         Assertions.assertFalse(projectSection.findProjectCreated(newProjectName).isControlDisplayed(), "ERROR: The project was created with blank space.");
-//        Assertions.assertEquals(newProjectName, projectSection.findLastProjectCreated(newProjectName).getText(), "ERR0R: The project was not created. ");
 
     }
 
