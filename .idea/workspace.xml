@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Code analyzed with SpotBugs">
+    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Delete Assertion fixed">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/TestBaseTodoLy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestBaseTodoLy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TaskSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TaskSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCasesForTask.verifyDeleteTask">
+  <component name="RunManager" selected="Gradle.TestCasesForSettings.verifyDeleteAccount">
     <configuration name="TestCasesForLogin.verifyLoginCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -127,29 +125,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForProject.verifyEditProject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForProject.verifyEditProject&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="TestCasesForProject.verifyProjectsWithSameName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -164,6 +139,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;cleanTest.todoLy.TestCasesForProject.verifyProjectsWithSameName&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCasesForSettings.verifyDeleteAccount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForSettings.verifyDeleteAccount&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -221,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestCasesForSettings.verifyDeleteAccount" />
         <item itemvalue="Gradle.TestCasesForTask.verifyDeleteTask" />
         <item itemvalue="Gradle.TestCasesForProject.verifyProjectsWithSameName" />
         <item itemvalue="Gradle.TestCasesForSignUp.verifySignUp" />
         <item itemvalue="Gradle.TestCasesForLogin.verifyLoginCorrectly" />
-        <item itemvalue="Gradle.TestCasesForProject.verifyEditProject" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668091966371</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Delete Assertion fixed">
+      <created>1668095749179</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1668095749179</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -457,6 +462,7 @@
     <MESSAGE value="@Severity and @Tag added" />
     <MESSAGE value="Improving locators name for reports" />
     <MESSAGE value="Code analyzed with SpotBugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code analyzed with SpotBugs" />
+    <MESSAGE value="Delete Assertion fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete Assertion fixed" />
   </component>
 </project>
