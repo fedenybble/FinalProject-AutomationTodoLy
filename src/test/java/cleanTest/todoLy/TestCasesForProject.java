@@ -116,8 +116,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
         projectSection.addButton.click();
         String secondProjectCreated = projectSection.findLastProjectCreated(newProjectName).getText();
 
-        Assertions.assertEquals(firstProjectCreated, secondProjectCreated, "ERROR: Already exists a project with that name.");
-
+        Assertions.assertNotEquals(firstProjectCreated, secondProjectCreated, "ERROR: Already exists a project with that name.");
 
         Thread.sleep(3000);
 

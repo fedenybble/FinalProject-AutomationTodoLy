@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="@Severity and @Tag added">
+    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Improving locators name for reports">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/NavBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/NavBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProjectSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProjectSection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SettingsModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SettingsModal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignUpModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SignUpModal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TaskSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TaskSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,30 +97,7 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCasesForSignUp.verifySignUp">
-    <configuration name="TestCaseForLogout.verifyLogout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCaseForLogout.verifyLogout&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.TestCasesForProject.verifyProjectsWithSameName">
     <configuration name="TestCasesForLogin.verifyLoginCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,6 +135,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;cleanTest.todoLy.TestCasesForProject.verifyEditProject&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCasesForProject.verifyProjectsWithSameName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForProject.verifyProjectsWithSameName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -218,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestCasesForProject.verifyProjectsWithSameName" />
         <item itemvalue="Gradle.TestCasesForSignUp.verifySignUp" />
         <item itemvalue="Gradle.TestCasesForLogin.verifyLoginCorrectly" />
         <item itemvalue="Gradle.TestCasesForProject.verifyEditProject" />
         <item itemvalue="Gradle.Tests in 'cleanTest.todoLy'" />
-        <item itemvalue="Gradle.TestCaseForLogout.verifyLogout" />
       </list>
     </recent_temporary>
   </component>
@@ -403,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668087619988</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Improving locators name for reports">
+      <created>1668088697425</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668088697425</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,6 +435,7 @@
     <MESSAGE value="@Epic added and one Assertion fixed." />
     <MESSAGE value="Waits were added" />
     <MESSAGE value="@Severity and @Tag added" />
-    <option name="LAST_COMMIT_MESSAGE" value="@Severity and @Tag added" />
+    <MESSAGE value="Improving locators name for reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improving locators name for reports" />
   </component>
 </project>
