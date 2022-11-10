@@ -31,8 +31,6 @@ public class TestBaseTodoLy {
     @BeforeEach
     public void setup() throws InterruptedException {
 
-        Thread.sleep(5000);
-
         allureEnvironmentWriter(
                 ImmutableMap.<String, String>builder()
                         .put("Browser", GetProperties.getInstance().getBrowser())
