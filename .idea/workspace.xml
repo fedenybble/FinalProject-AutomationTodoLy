@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Login Test Cases Automated with Assertions">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestCaseForLogout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestCasesForSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SettingsModal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="@Severity and @Tag added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/TestBaseTodoLy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestBaseTodoLy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/TestCasesForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/TestCasesForLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factoryBrowser/BrowserDocker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factoryBrowser/BrowserDocker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factoryBrowser/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factoryBrowser/Chrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factoryBrowser/Headless.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factoryBrowser/Headless.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factoryBrowser/Safari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factoryBrowser/Safari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/NavBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/NavBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProjectSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProjectSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SettingsModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SettingsModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignUpModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SignUpModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TaskSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TaskSection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +61,9 @@
       </list>
     </option>
   </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -90,15 +81,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/fede/Documents/Nybble /Automation/FinalProject-AutomationTodoLy/src/test/java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/fede/Documents/Nybble /Automation/FinalProject-AutomationTodoLy"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
@@ -107,8 +100,8 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCasesForSettings.editPassword">
-    <configuration name="TestCasesForLogin.verifyNonRegisterAccount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TestCasesForSignUp.verifySignUp">
+    <configuration name="TestCaseForLogout.verifyLogout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -121,7 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.TestCasesForLogin.verifyNonRegisterAccount&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCaseForLogout.verifyLogout&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -131,7 +124,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForSettings" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCasesForLogin.verifyLoginCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,7 +137,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.TestCasesForSettings&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyLoginCorrectly&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,7 +147,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForSettings.editFirstDayOfWeek" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCasesForProject.verifyEditProject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -167,7 +160,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.TestCasesForSettings.editFirstDayOfWeek&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForProject.verifyEditProject&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,7 +170,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForSettings.editFullName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCasesForSignUp.verifySignUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -190,7 +183,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.TestCasesForSettings.editFullName&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForSignUp.verifySignUp&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,7 +193,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForSettings.editPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'cleanTest.todoLy'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -213,7 +206,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.TestCasesForSettings.editPassword&quot;" />
+            <option value="&quot;cleanTest.todoLy.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -225,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestCasesForSettings.editPassword" />
-        <item itemvalue="Gradle.TestCasesForSettings.editFullName" />
-        <item itemvalue="Gradle.TestCasesForLogin.verifyNonRegisterAccount" />
-        <item itemvalue="Gradle.TestCasesForSettings.editFirstDayOfWeek" />
-        <item itemvalue="Gradle.TestCasesForSettings" />
+        <item itemvalue="Gradle.TestCasesForSignUp.verifySignUp" />
+        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginCorrectly" />
+        <item itemvalue="Gradle.TestCasesForProject.verifyEditProject" />
+        <item itemvalue="Gradle.Tests in 'cleanTest.todoLy'" />
+        <item itemvalue="Gradle.TestCaseForLogout.verifyLogout" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +298,112 @@
       <option name="project" value="LOCAL" />
       <updated>1667915401490</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Setting Test Cases Automated with Assertions">
+      <created>1667933015220</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667933015221</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Setting Test Cases Automated with Assertions">
+      <created>1667934970900</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667934970900</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Automation for Project Test Cases.">
+      <created>1667938221254</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667938221254</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Automation for Project Test Cases.">
+      <created>1667941025829</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667941025829</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Automation for Project Test Cases.">
+      <created>1668002142304</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668002142304</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Automated Test Cases">
+      <created>1668005126095</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668005126095</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Reordenando la estructura">
+      <created>1668006793734</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668006793734</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Reordenando la estructura">
+      <created>1668007834894</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668007834894</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Reordenando la estructura">
+      <created>1668010307578</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668010307578</updated>
+    </task>
+    <task id="LOCAL-00019" summary=" New structure">
+      <created>1668010591857</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668010591857</updated>
+    </task>
+    <task id="LOCAL-00020" summary=" New structure">
+      <created>1668011360999</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668011360999</updated>
+    </task>
+    <task id="LOCAL-00021" summary="@Epic added and one Assertion fixed.">
+      <created>1668016799327</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1668016799327</updated>
+    </task>
+    <task id="LOCAL-00022" summary="@Epic added and one Assertion fixed.">
+      <created>1668017721340</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668017721340</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Waits were added">
+      <created>1668024296416</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668024296416</updated>
+    </task>
+    <task id="LOCAL-00024" summary="@Severity and @Tag added">
+      <created>1668087619988</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668087619988</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,6 +423,14 @@
     <MESSAGE value="Automated Test Cases for Sign Up with Assertions." />
     <MESSAGE value="Login Test Case Automated." />
     <MESSAGE value="Login Test Cases Automated with Assertions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login Test Cases Automated with Assertions" />
+    <MESSAGE value="Setting Test Cases Automated with Assertions" />
+    <MESSAGE value="Automation for Project Test Cases." />
+    <MESSAGE value="Automated Test Cases" />
+    <MESSAGE value="Reordenando la estructura" />
+    <MESSAGE value=" New structure" />
+    <MESSAGE value="@Epic added and one Assertion fixed." />
+    <MESSAGE value="Waits were added" />
+    <MESSAGE value="@Severity and @Tag added" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Severity and @Tag added" />
   </component>
 </project>

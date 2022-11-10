@@ -20,11 +20,13 @@ import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnviro
 @ExtendWith(TestResultExtension.class)
 public class TestBaseTodoLy {
 
-    MainPage mainPage = new MainPage();
-    SignUpModal signUpModal = new SignUpModal();
-    NavBar navBar = new NavBar();
-    LoginModal loginModal = new LoginModal();
-    SettingsModal settingsModal = new SettingsModal();
+    public MainPage mainPage = new MainPage();
+    public SignUpModal signUpModal = new SignUpModal();
+    public NavBar navBar = new NavBar();
+    public LoginModal loginModal = new LoginModal();
+    public SettingsModal settingsModal = new SettingsModal();
+    public ProjectSection projectSection = new ProjectSection();
+    public TaskSection taskSection = new TaskSection();
 
     @BeforeEach
     public void setup() throws InterruptedException {
@@ -45,7 +47,5 @@ public class TestBaseTodoLy {
     public void cleanup(){
         Session.getInstance().closeBrowser();
     }
-
-
 
 }

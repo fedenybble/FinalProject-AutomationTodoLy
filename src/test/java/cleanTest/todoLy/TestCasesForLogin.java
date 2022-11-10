@@ -1,12 +1,10 @@
-package cleanTest;
+package cleanTest.todoLy;
 
-import io.qameta.allure.Description;
-import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import cleanTest.TestBaseTodoLy;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.*;
 import singletonSession.Session;
+import utils.GetProperties;
 
 import java.time.Duration;
 import java.util.Date;
@@ -14,27 +12,28 @@ import java.util.concurrent.TimeUnit;
 
 public class TestCasesForLogin extends TestBaseTodoLy {
 
-    String email = "ejemplo@ejemplo.com";
-    String password = "ejemplo";
-
     @Test
     @Order(1)
     @DisplayName("Verify if the user can login correctly.")
     @Description("This test case is to verify if the user can login to the page correctly with a registered account.")
     @Owner("Federico Padin")
+    @Epic("Login")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Login")
     public void verifyLoginCorrectly() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
+        navBar.navBarLogoutButton.waitIsVisible();
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
     @Test
@@ -42,18 +41,21 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @DisplayName("Verify if the user can login with the [Email] field empty.")
     @Description("This test case is to verify if the user can login if the [Email] field empty.")
     @Owner("Federico Padin")
+    @Epic("Login")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Login")
     public void verifyLoginEmptyEmail() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "The user could not login");
+        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
     @Test
@@ -61,18 +63,21 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @DisplayName("Verify if the user can login with the [Password] field empty.")
     @Description("This test case is to verify if the user can login if he leaves the [Password] field empty and clicks [Login] button.")
     @Owner("Federico Padin")
+    @Epic("Login")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Login")
     public void verifyLoginPwdEmpty() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
         mainPage.loginButton.click();
 
         loginModal.loginEmailInput.waitIsVisible();
-        loginModal.loginEmailInput.setText(email);
+        loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "The user could not login");
+        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
@@ -81,6 +86,9 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @DisplayName("Verify if the user can login with a non-register account.")
     @Description("This test case is to verify if the user can login with an account that is not registered.")
     @Owner("Federico Padin")
+    @Epic("Login")
+    @Severity(SeverityLevel.CRITICAL)
+    @Tag("Login")
     public void verifyNonRegisterAccount() throws InterruptedException {
 
         String emailNotRegistered = new Date().getTime()+"@gmail.com";
@@ -90,12 +98,12 @@ public class TestCasesForLogin extends TestBaseTodoLy {
 
         loginModal.loginEmailInput.waitIsVisible();
         loginModal.loginEmailInput.setText(emailNotRegistered);
-        loginModal.loginPasswordInput.setText(password);
+        loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "The user could not login");
+        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 
