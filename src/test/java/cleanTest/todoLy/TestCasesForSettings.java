@@ -14,9 +14,6 @@ import java.util.Date;
 
 public class TestCasesForSettings extends TestBaseTodoLy {
 
-    String email = "ejemplo@ejemplo.com";
-    String password = "ejemplo";
-
     @Test
     @Order(1)
     @DisplayName("Verify if the user can edit the 'First Day of Week'")
