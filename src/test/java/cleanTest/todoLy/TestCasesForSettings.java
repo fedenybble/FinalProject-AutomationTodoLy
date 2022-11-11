@@ -189,8 +189,8 @@ public class TestCasesForSettings extends TestBaseTodoLy {
         loginModal.loginPasswordInput.setText(pwd);
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The account was not deleted.");
-
+        //Assertions.assertFalse(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The account was not deleted.");
+        Assertions.assertTrue(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user can login with the deleted account. ");
         Thread.sleep(3000);
 
     }
