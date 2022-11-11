@@ -44,6 +44,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Login")
     @Severity(SeverityLevel.CRITICAL)
+    @Tag("Negative Test")
     public void verifyLoginEmptyEmail() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -65,6 +66,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Login")
     @Severity(SeverityLevel.CRITICAL)
+    @Tag("Negative Test")
     public void verifyLoginPwdEmpty() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -87,6 +89,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Login")
     @Severity(SeverityLevel.CRITICAL)
+    @Tag("Negative Test")
     public void verifyNonRegisterAccount() throws InterruptedException {
 
         String emailNotRegistered = new Date().getTime()+"@gmail.com";

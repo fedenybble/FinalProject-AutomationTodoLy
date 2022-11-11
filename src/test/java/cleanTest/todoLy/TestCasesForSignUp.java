@@ -54,7 +54,6 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("SignUp")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("SignUp")
     public void verifySameNameAndEmail() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();
@@ -67,7 +66,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
         signUpModal.signUpTermsCB.check();
         signUpModal.signUpButton.click();
 
-        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
+        Assertions.assertFalse(signUpModal.headerMessageError.isControlDisplayed(), "ERROR: The name and the email can not be the same.");
 
         Thread.sleep(3000);
 
@@ -80,7 +79,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("SignUp")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("SignUp")
+    @Tag("Negative Test")
     public void verifyWithoutEmailField() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();
@@ -92,7 +91,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
         signUpModal.signUpTermsCB.check();
         signUpModal.signUpButton.click();
 
-        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
+        Assertions.assertTrue(signUpModal.headerMessageError.isControlDisplayed(), "ERROR: The user was registered without filling the email field. ");
 
         Thread.sleep(3000);
 
@@ -105,7 +104,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("SignUp")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("SignUp")
+    @Tag("Negative Test")
     public void verifyTermsOfServiceUnchecked() throws InterruptedException {
 
         mainPage.signUpFreeButton.waitClickable();
@@ -117,8 +116,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
         signUpModal.signUpPasswordInput.setText(password);
         signUpModal.signUpButton.click();
 
-        // Assertions.assertFalse(mainPage.errorMessageText.isControlDisplayed(), "ERROR: The user was not registered.");
-       Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user was not registered.");
+        Assertions.assertTrue(signUpModal.headerMessageError.isControlDisplayed(), "ERROR: The user was registered without checking the Terms of Service. ");
 
         Thread.sleep(3000);
 
