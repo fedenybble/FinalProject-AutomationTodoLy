@@ -4,6 +4,7 @@ import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 import utils.GetProperties;
+import utils.RandomString;
 
 import java.util.Date;
 
@@ -167,8 +168,7 @@ public class TestCasesForTask extends TestBaseTodoLy {
     public void verifyLengthTaskNameField() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
-        String taskName = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
-
+        String taskName = RandomString.getAlphaNumericString(300);
 
         mainPage.loginButton.waitClickable();
         mainPage.loginButton.click();
@@ -193,7 +193,7 @@ public class TestCasesForTask extends TestBaseTodoLy {
         taskSection.newTaskNameInput.setText(taskName);
         taskSection.newTaskAddButton.click();
 
-        Assertions.assertTrue(taskName.length()<300, "ERROR: The task was created");
+        Assertions.assertTrue(taskName.length()<299, "ERROR: The task was created");
 
         Thread.sleep(3000);
 

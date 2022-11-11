@@ -44,6 +44,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Login")
     @Severity(SeverityLevel.CRITICAL)
+    @Tag("Negative Test")
     public void verifyLoginEmptyEmail() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -53,7 +54,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
+        Assertions.assertTrue(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could login without entering an email");
 
         Thread.sleep(3000);
     }
@@ -65,6 +66,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Login")
     @Severity(SeverityLevel.CRITICAL)
+    @Tag("Negative Test")
     public void verifyLoginPwdEmpty() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();
@@ -74,7 +76,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
+        Assertions.assertTrue(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could login without entering the password. ");
 
         Thread.sleep(3000);
 
@@ -87,6 +89,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Login")
     @Severity(SeverityLevel.CRITICAL)
+    @Tag("Negative Test")
     public void verifyNonRegisterAccount() throws InterruptedException {
 
         String emailNotRegistered = new Date().getTime()+"@gmail.com";
@@ -99,7 +102,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
+        Assertions.assertTrue(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could login with a non-register account. ");
 
         Thread.sleep(3000);
 

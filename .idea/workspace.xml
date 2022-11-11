@@ -4,14 +4,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="allureReports added">
+    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="Fixing final details">
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/0020b280-7220-46c5-befb-b7eefafe6483-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/00d03a42-7849-4933-aa52-6099da8e9adb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/02d7da4e-a306-4b90-a055-595277568423-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/0476bd07-97d5-49f5-8c66-5a70033e7716-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/052c8805-a077-42c7-925a-05be82609de9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/0b46c28b-b443-4b74-8420-a4c3ad65ea14-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/1035f6ae-5f8c-437f-9b3a-8e7d7873dc61-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/14ef2be6-61ed-451e-abb7-6d17cfe52bc2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/192bf6ef-bb98-4901-9da7-e83a30986d2e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/19f2b5bd-0f4d-4f94-ac3d-c0f2376a8db3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/19f77e8b-b7f9-4960-b816-a729164df88c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/1bb6e877-4fea-407e-b007-32f1098e5107-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/1cd6cbbc-7c32-4d8f-84fd-c10b9a055a07-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/1e403184-95fe-43cb-804c-4e8c005640d6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/1f9db443-5585-4586-8f92-ef8b93e1a03b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/24a80518-5078-43e8-82a6-fdb7839d5018-attachment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/25992fa9-9289-4fae-a6ee-afa4a1e22eff-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/39c58b24-7888-4db2-9a51-cd4fc1ec9778-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/3c79ae80-3466-4ce9-8318-664ce3fa55ae-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/43707c5e-0173-42ea-a1ab-b0cdd29c5867-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/43c971a6-70e9-41e9-a8a2-275fa6e0acfb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/44323260-23ab-45a4-b404-645f1b1309b3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/48e8a77c-f9a7-4664-ab3f-1e2c9e89095d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/49b817ac-78af-4d79-be57-a828f9855074-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/4a4c5c34-2837-4a51-a9b4-55a099936cf7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/4d182226-be38-4658-bbeb-7380b63e8cc6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/4ee4891e-367f-4efa-9d22-db4089845ff8-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/51e854f6-9c0c-4692-ab69-70358959106e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/55f97b05-3fc7-4856-8523-281391e58a33-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/591a2095-abf8-4530-afdc-6290f1004644-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/5be99407-0fa4-4a9e-9d19-e16e7489c5ce-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/6387b520-0b38-405f-b0ae-28be5d3d818d-attachment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/6976e9fe-c556-4f77-a018-223ca193e347-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/6a35b9e3-a6a3-4c8a-b019-bf7e7929d175-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/6a94bac6-3b7d-4f56-83ce-a89b7cd489b9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/70c3f9c1-b84f-47b4-a85b-f91146ca9dca-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/7bf7d206-9987-4003-a543-19183872b3b8-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/823c01ce-6693-4d36-ab27-9b2ef482da44-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/8583747a-484d-4aae-b539-a74bf2c3a4a5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/8680702b-1775-4e42-9db5-0451a51f91ed-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/86a317fa-a572-4c54-b247-e9068ce0047c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/87626759-18e7-4c3e-a877-67fd59c96359-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/88697853-888e-4e38-acd8-ae006737d2d6-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/8d338960-ce27-4ddb-a952-32f7539546d2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/94a2282b-1773-41db-8af0-45284b131a93-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/95eb5aaa-2268-4131-bd93-1108791ce550-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/9cdbf0a8-d116-4e90-8cc2-10360a521c01-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/b0a2b81d-e69f-44b6-b6f1-7e52ca755d6e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/bbe3bea9-859d-4450-a0da-22cf09f14825-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/bfb30ae3-5d27-46c6-86cf-79b5e5adec2e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/c5cf280c-66dd-4373-8adb-af3764d3ff22-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/c77776e6-33d4-458e-a2ff-c4125201cef4-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/c90c02f8-4aa5-41db-b293-b5dea7b504b7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/cd3cd35d-5c4b-4ef3-8308-9de63858f828-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/cdc73d6f-f13d-4317-aa8c-a0c2236dfb02-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/d6217e0f-f37e-494a-83f3-813c3018ec2d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/e08e01b8-291e-41c3-aeca-7d9275cf0644-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/e8594d2d-bd0f-482a-98b3-8d2db200312d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/e9bfcc62-2d22-483c-b369-2aad84905175-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/edfea48f-9bb8-4058-8a4a-545b1d923f9d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/f1a2490c-ee5e-4ffb-9e7c-d0b88aab2ef0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/f425047d-3e52-4c85-888b-8e27bc0f8ef0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/f42a1e0a-fca9-43e6-a482-ac0135539260-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/f8989895-dbde-45bf-9292-7892eef6fd0c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/fe56fef0-ca2c-40a7-8a97-3a554f881362-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/fe8296a6-d435-4181-8b9b-0fe8a8ff5b0e-attachment" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +168,8 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCasesForProject.verifyProjectsWithSameName">
-    <configuration name="TestCasesForLogin.verifyLoginCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'cleanTest'">
+    <configuration name="TestCasesForLogin.verifyLoginPwdEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -116,7 +182,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyLoginCorrectly&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyLoginPwdEmpty&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCasesForLogin.verifyNonRegisterAccount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyNonRegisterAccount&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -149,7 +238,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForSettings.editFullName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'cleanTest'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -162,7 +251,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForSettings.editFullName&quot;" />
+            <option value="&quot;cleanTest.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -172,7 +261,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForSettings.editPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'cleanTest.todoLy'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -185,30 +274,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForSettings.editPassword&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestCasesForSignUp.verifySignUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForSignUp.verifySignUp&quot;" />
+            <option value="&quot;cleanTest.todoLy.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,11 +286,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'cleanTest'" />
         <item itemvalue="Gradle.TestCasesForProject.verifyProjectsWithSameName" />
-        <item itemvalue="Gradle.TestCasesForSignUp.verifySignUp" />
-        <item itemvalue="Gradle.TestCasesForSettings.editPassword" />
-        <item itemvalue="Gradle.TestCasesForSettings.editFullName" />
-        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginCorrectly" />
+        <item itemvalue="Gradle.Tests in 'cleanTest.todoLy'" />
+        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginPwdEmpty" />
+        <item itemvalue="Gradle.TestCasesForLogin.verifyNonRegisterAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -489,7 +555,42 @@
       <option name="project" value="LOCAL" />
       <updated>1668141718896</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="New reports directory">
+      <created>1668142135480</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1668142135480</updated>
+    </task>
+    <task id="LOCAL-00038" summary="New reports directory">
+      <created>1668142869917</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1668142869917</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fixing final details">
+      <created>1668143849652</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1668143849652</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Fixing final details">
+      <created>1668144718048</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1668144718048</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Fixing final details">
+      <created>1668147145748</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1668147145748</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,6 +624,8 @@
     <MESSAGE value="New changes" />
     <MESSAGE value="ParameterizedTest added" />
     <MESSAGE value="allureReports added" />
-    <option name="LAST_COMMIT_MESSAGE" value="allureReports added" />
+    <MESSAGE value="New reports directory" />
+    <MESSAGE value="Fixing final details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing final details" />
   </component>
 </project>
