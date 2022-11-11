@@ -11,7 +11,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/preprod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCasesForSettings.verifyDeleteAccount">
+  <component name="RunManager" selected="Gradle.TestCasesForLogin.verifyLoginPwdEmpty">
     <configuration name="TestCaseForLogout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -149,7 +149,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesForProject.verifyProjectsWithSameName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCasesForLogin.verifyLoginPwdEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -162,7 +162,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForProject.verifyProjectsWithSameName&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyLoginPwdEmpty&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginPwdEmpty" />
         <item itemvalue="Gradle.TestCasesForSettings.verifyDeleteAccount" />
         <item itemvalue="Gradle.TestCaseForLogout" />
         <item itemvalue="Gradle.TestCasesForLogin" />
         <item itemvalue="Gradle.Tests in 'cleanTest'" />
-        <item itemvalue="Gradle.TestCasesForProject.verifyProjectsWithSameName" />
       </list>
     </recent_temporary>
   </component>
@@ -545,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668174655846</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Final details">
+      <created>1668175366694</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1668175366694</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
