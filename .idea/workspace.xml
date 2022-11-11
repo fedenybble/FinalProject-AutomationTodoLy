@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="allureReports added">
+    <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="New reports directory">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +102,8 @@
       <recent name="singletonSession" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCasesForProject.verifyProjectsWithSameName">
-    <configuration name="TestCasesForLogin.verifyLoginCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TestCasesForLogin.verifyLoginEmptyEmail">
+    <configuration name="TestCasesForLogin.verifyLoginEmptyEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -116,7 +116,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyLoginCorrectly&quot;" />
+            <option value="&quot;cleanTest.todoLy.TestCasesForLogin.verifyLoginEmptyEmail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginEmptyEmail" />
         <item itemvalue="Gradle.TestCasesForProject.verifyProjectsWithSameName" />
         <item itemvalue="Gradle.TestCasesForSignUp.verifySignUp" />
         <item itemvalue="Gradle.TestCasesForSettings.editPassword" />
         <item itemvalue="Gradle.TestCasesForSettings.editFullName" />
-        <item itemvalue="Gradle.TestCasesForLogin.verifyLoginCorrectly" />
       </list>
     </recent_temporary>
   </component>
@@ -489,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668141718896</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="New reports directory">
+      <created>1668142135480</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1668142135480</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,6 +530,7 @@
     <MESSAGE value="New changes" />
     <MESSAGE value="ParameterizedTest added" />
     <MESSAGE value="allureReports added" />
-    <option name="LAST_COMMIT_MESSAGE" value="allureReports added" />
+    <MESSAGE value="New reports directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="New reports directory" />
   </component>
 </project>

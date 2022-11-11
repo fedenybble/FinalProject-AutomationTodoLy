@@ -53,7 +53,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
+        Assertions.assertTrue(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could login without entering an email");
 
         Thread.sleep(3000);
     }
@@ -74,7 +74,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         loginModal.loginEmailInput.setText(GetProperties.getInstance().getUser());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
+        Assertions.assertTrue(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could login without entering the password. ");
 
         Thread.sleep(3000);
 
@@ -99,7 +99,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         loginModal.loginPasswordInput.setText(GetProperties.getInstance().getPwd());
         loginModal.loginButton.click();
 
-        Assertions.assertFalse(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could not login");
+        Assertions.assertTrue(mainPage.errorMessageLogin.isControlDisplayed(), "ERROR: The user could login with a non-register account. ");
 
         Thread.sleep(3000);
 
