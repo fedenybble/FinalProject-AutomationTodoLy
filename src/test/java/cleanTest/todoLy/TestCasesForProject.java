@@ -18,7 +18,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Project")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("Project")
+    @Tag("Critical Flow")
     public void verifyNewProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -52,7 +52,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Project")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("Project")
+    @Tag("Negative Test for Project Section")
     public void verifyNewProjectWithoutName(){
 
         String newProjectName = " ";
@@ -84,7 +84,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Project")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("Project")
+    @Tag("Bug")
+    @Issue("https://nybblegroup.atlassian.net/browse/NAQA-416")
     public void verifyProjectsWithSameName() throws InterruptedException {
 
         String newProjectName = "NewProjectName";
@@ -128,7 +129,8 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Project")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("Project")
+    @Tag("Bug")
+    @Issue("https://nybblegroup.atlassian.net/browse/NAQA-419")
     public void projectNameWith300Characters() throws InterruptedException {
 
         String projectName = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
@@ -204,7 +206,6 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Project")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("Project")
     public void verifyEditProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -248,7 +249,6 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Project")
     @Severity(SeverityLevel.MINOR)
-    @Tag("Project")
     public void setNewIconToProject() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -288,7 +288,6 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Project")
     @Severity(SeverityLevel.NORMAL)
-    @Tag("Project")
     public void verifyAddItemAboveButton() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();

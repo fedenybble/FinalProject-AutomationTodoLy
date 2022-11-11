@@ -3,6 +3,9 @@ package cleanTest.todoLy;
 import cleanTest.TestBaseTodoLy;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import utils.RandomString;
 
 import java.util.Date;
 
@@ -12,15 +15,21 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     String email = new Date().getTime()+"@gmail.com";
     String password = "passwordForAutomation";
 
-    @Test
+
     @Order(1)
     @DisplayName("Verify if an user can SignUp correctly.")
     @Description("This test case is to verify that an user can sign up correctly after filling all the fields with valid data.")
     @Owner("Federico Padin")
     @Epic("SignUp")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("SignUp")
-    public void verifySignUp() throws InterruptedException {
+    @Tag("Critical Flow")
+    @ParameterizedTest
+    @CsvSource({
+            "1", "10", "50", "300"
+    })
+    public void verifySignUp(int numberOfCharacters) throws InterruptedException {
+
+        password = RandomString.getAlphaNumericString(numberOfCharacters);
 
         mainPage.signUpFreeButton.waitClickable();
         mainPage.signUpFreeButton.click();
