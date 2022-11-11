@@ -24,7 +24,10 @@ public class ProjectSection {
         Button lastProjectCreated = new Button(By.xpath("//li[last()]//td[text()='" + name + "']"), "[lastProjectCreated] in Project Section");
         return lastProjectCreated;
     }
-
+    public Button matchingProjects(String name){
+        Button matchProject = new Button(By.xpath("((//li//td[text()='"+name+"'])[last()]//../../../../..//preceding-sibling::li//td[text()='"+name+"'])[last()]"), "[matchProject] in Project Section");
+        return matchProject;
+    }
     public Button findProjectCreated(String name){
         Button projectCreated = new Button(By.xpath("(//li//td[text()='"+name+"'])[last()]"), "[projectCreated] in Project Section");
         return projectCreated;
