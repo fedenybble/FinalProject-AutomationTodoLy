@@ -14,6 +14,7 @@ public class ProjectSection {
     public Button editOptionButton = new Button(By.xpath("//ul[@id=\"projectContextMenu\"]//li[@class=\"edit\"]"), "[editOptionButton] located in Project Section -> Options");
     public Input editInputProjectName = new Input(By.xpath("//td[@class=\"ProjItemContent UnderEditingItem\"]//input[@id=\"ItemEditTextbox\"]"), "[editInputProjectName] located in Project Section");
     public Button saveIconButton = new Button(By.xpath("//td[@class=\"ProjItemContent UnderEditingItem\"]//*[@id=\"ItemEditSubmit\"]"), "[saveIconButton] located in Project Section");
+    public Label projectList = new Label(By.id("mainProjectList"), "[projectList] located in Project Section");
     public Button ballIcon = new Button(By.xpath("//ul[@id=\"projectContextMenu\"]//li[@class=\"share separator\"]//div[@id=\"IconFrameOuter\"]//span[@style=\"background: url(Images/icons/ball.png) no-repeat;\"]"), "[ballIcon] located in Project Section -> Options");
     public Label ballIconLabel = new Label(By.xpath("//li[last()]//div[@id=\"ListIcon\" and @style=\"background: url(Images/icons/ball.png) no-repeat;\"]"), "[ballIconLabel] located in Project Section");
     public Button addItemAboveButton = new Button(By.xpath("//ul[@id=\"projectContextMenu\"]//li[@class=\"add separator\"]"), "[addItemAboveButton] located in Project Section -> Options");

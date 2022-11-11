@@ -5,6 +5,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 import singletonSession.Session;
 import utils.GetProperties;
+import utils.RandomString;
 
 import java.util.Date;
 
@@ -67,13 +68,15 @@ public class TestCasesForProject extends TestBaseTodoLy {
 
         Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The user failed to login");
 
+        int numberBeforeOfProjects = Integer.parseInt(projectSection.projectList.getAttribute("childElementCount"));
         projectSection.addNewProjectButton.waitClickable();
         projectSection.addNewProjectButton.click();
         projectSection.addNewProjectInput.waitIsVisible();
         projectSection.addNewProjectInput.setText(newProjectName);
         projectSection.addButton.click();
+        int numberAfterOfProjects = Integer.parseInt(projectSection.projectList.getAttribute("childElementCount"));
 
-        Assertions.assertFalse(projectSection.findProjectCreated(newProjectName).isControlDisplayed(), "ERROR: The project was created with blank space.");
+        Assertions.assertEquals(numberBeforeOfProjects, numberAfterOfProjects, "ERROR: The project was created without a name");
 
     }
 
@@ -133,7 +136,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
     @Issue("https://nybblegroup.atlassian.net/browse/NAQA-419")
     public void projectNameWith300Characters() throws InterruptedException {
 
-        String projectName = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+        String projectName = RandomString.getAlphaNumericString(300);
 
         mainPage.loginButton.waitClickable();
         mainPage.loginButton.click();
@@ -151,7 +154,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
         projectSection.addNewProjectInput.setText(projectName);
         projectSection.addButton.click();
 
-        Assertions.assertTrue(projectName.length()<300, "ERROR: The project was created");
+        Assertions.assertTrue(projectName.length()<299, "ERROR: The project was created");
 
         Thread.sleep(3000);
 
