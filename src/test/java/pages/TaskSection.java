@@ -13,6 +13,8 @@ public class TaskSection {
     public Button deleteTaskOption = new Button(By.xpath("//ul[@id=\"itemContextMenu\"]//a[@href=\"#delete\"]"), "[deleteTaskOption] located in Task Section -> Options");
     public Button setPriorityOneOption = new Button(By.xpath("//div[@id=\"Div1\"]//span[@iconid=\"1\"]"), "[setPriorityOneOption] located in Task Section");
 
+    public Label tasksList = new Label(By.id("mainItemList"), "[tasksList] located in Task Section");
+
     public Label findTaskCreated(String name){
 
         Label taskCreated = new Label(By.xpath("//ul[@id=\"mainItemList\"]//div[text()='" +name+ "']"), "[taskCreated] in Task Section");

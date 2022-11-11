@@ -74,7 +74,6 @@ public class TestCasesForProject extends TestBaseTodoLy {
         projectSection.addButton.click();
 
         Assertions.assertFalse(projectSection.findProjectCreated(newProjectName).isControlDisplayed(), "ERROR: The project was created with blank space.");
-//        Assertions.assertEquals(newProjectName, projectSection.findLastProjectCreated(newProjectName).getText(), "ERR0R: The project was not created. ");
 
     }
 
@@ -116,8 +115,7 @@ public class TestCasesForProject extends TestBaseTodoLy {
         projectSection.addButton.click();
         String secondProjectCreated = projectSection.findLastProjectCreated(newProjectName).getText();
 
-        Assertions.assertEquals(firstProjectCreated, secondProjectCreated, "ERROR: Already exists a project with that name.");
-
+        Assertions.assertNotEquals(firstProjectCreated, secondProjectCreated, "ERROR: Already exists a project with that name.");
 
         Thread.sleep(3000);
 

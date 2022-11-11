@@ -14,9 +14,6 @@ import java.util.Date;
 
 public class TestCasesForSettings extends TestBaseTodoLy {
 
-    String email = "ejemplo@ejemplo.com";
-    String password = "ejemplo";
-
     @Test
     @Order(1)
     @DisplayName("Verify if the user can edit the 'First Day of Week'")
@@ -192,7 +189,7 @@ public class TestCasesForSettings extends TestBaseTodoLy {
         loginModal.loginPasswordInput.setText(pwd);
         loginModal.loginButton.click();
 
-        Assertions.assertTrue(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The account was deleted successfully.");
+        Assertions.assertFalse(navBar.navBarLogoutButton.isControlDisplayed(), "ERROR: The account was not deleted.");
 
         Thread.sleep(3000);
 

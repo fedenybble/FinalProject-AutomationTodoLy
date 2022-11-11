@@ -89,12 +89,16 @@ public class TestCasesForTask extends TestBaseTodoLy {
 
         Assertions.assertEquals(taskName, taskSection.findTaskCreated(taskName).getText(), "ERROR: The task was not created. ");
 
+        int numberBeforeOfTasks = Integer.parseInt(taskSection.tasksList.getAttribute("childElementCount"));
         taskSection.findNewTaskCreated(taskName).waitIsVisible();
         taskSection.findNewTaskCreated(taskName).click();
         taskSection.optionButtonTask.click();
         taskSection.deleteTaskOption.click();
+        //taskSection.tasksList.waitAttributeToChange("childElementCount", String.valueOf((numberBeforeOfTasks-1)));
+        Thread.sleep(2000);
+        int numberAfterOfTasks = Integer.parseInt(taskSection.tasksList.getAttribute("childElementCount"));
 
-        Assertions.assertTrue(taskSection.findNewTaskCreated(taskName).isControlDisplayed(), "ERROR: The task was not deleted. ");
+        Assertions.assertNotEquals(numberBeforeOfTasks, numberAfterOfTasks, "ERROR: The task was not deleted. ");
 
         Thread.sleep(3000);
 
