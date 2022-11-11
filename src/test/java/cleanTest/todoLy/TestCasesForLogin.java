@@ -36,6 +36,7 @@ public class TestCasesForLogin extends TestBaseTodoLy {
         Thread.sleep(3000);
     }
 
+
     @Test
     @Order(2)
     @DisplayName("Verify if the user can login with the [Email] field empty.")
