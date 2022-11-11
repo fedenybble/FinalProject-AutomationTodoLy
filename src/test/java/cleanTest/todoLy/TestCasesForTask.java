@@ -16,7 +16,7 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Task")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("Task")
+    @Tag("Critical Flow")
     public void verifyCreateNewTask() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -59,6 +59,7 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @Epic("Task")
     @Severity(SeverityLevel.CRITICAL)
     @Tag("Task")
+    @Tag("Critical Flow")
     public void verifyDeleteTask() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();
@@ -161,7 +162,8 @@ public class TestCasesForTask extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Task")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("Task")
+    @Tag("Bug")
+    @Issue("https://nybblegroup.atlassian.net/browse/NAQA-421")
     public void verifyLengthTaskNameField() throws InterruptedException {
 
         String newProjectName = "newProject"+new Date().getTime();

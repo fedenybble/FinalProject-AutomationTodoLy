@@ -5,42 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8e27409-9211-4d0c-98b2-c9fa73cf1c90" name="Changes" comment="allureReports added">
-      <change afterPath="$PROJECT_DIR$/allureReports/Safari/572eaf8c-a779-424a-be60-6c21aa8069d5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/Safari/689d2a38-858b-4d8a-9aa1-e882a4efb2c9-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/Safari/7e2d5a93-79d0-4ec8-9e47-9973e6901bbb-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/0f018dc8-4e45-451d-929c-3ba4eef7a176-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/2bc251fc-5e5d-4f27-af65-8d4f40d9072c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/3f92ed40-a268-40d0-94e9-24e231fcba74-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/7934f297-62e6-4e64-89e2-7959eb1b7ea9-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/9ed14574-5285-4b7a-9105-c71ac782f64e-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/b6ce97e0-db71-47e3-bb1d-ab3d5bfc19f5-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/b74d928d-adc0-4837-812a-6730ff5fa1ad-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/ba1de404-68de-4023-9906-dd80b8e0d470-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/bfe7f296-d5db-405a-95a6-cd8563bd3500-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/chromeBrowser/e75b91fb-1d80-4d59-8ac5-05bfa8732e5b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/05de4d6c-a5f8-47a5-8dc9-a1c1d8039891-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/08e768ac-0168-45cd-a2a3-aa01d61f0265-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/1a1b7b33-10c3-4fd8-bf3c-9a10d4f20328-attachment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/22ad0a62-67f9-48e1-bfec-91bff91d0d4a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/75d2340f-1aff-4afb-af22-220a0c02eb8b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/995c7423-ea41-4ac0-89f6-ee0047eed446-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/9b49667a-5290-464a-9b8d-60615c67cd31-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/a274b8ae-f448-43a7-a01e-0107e644362f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/a90e9810-2509-4183-a175-7848c1c8aee4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/a9b9e965-b01e-4a32-a963-d921bbbbfa75-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/ad2acaa0-82e5-41d9-a418-9bbb7987c719-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/bf2d21af-1ca7-4479-b24a-b208b7bec472-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/ecc54ab8-1e2e-441b-b25e-9f784f094a44-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allureReports/firefoxBrowser/environment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factoryBrowser/Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factoryBrowser/Firefox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factoryBrowser/Headless.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factoryBrowser/Headless.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCaseForLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCaseForLogout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cleanTest/todoLy/TestCasesForTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,14 +80,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/fede/Documents/Nybble /Automation/FinalProject-AutomationTodoLy/allureReports/chromeBrowser"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/fede/Documents/Nybble /Automation/FinalProject-AutomationTodoLy/allureReports/chromeBrowser&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/allureReports/chromeBrowser" />
@@ -504,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668137172957</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="allureReports added">
+      <created>1668140120374</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1668140120374</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

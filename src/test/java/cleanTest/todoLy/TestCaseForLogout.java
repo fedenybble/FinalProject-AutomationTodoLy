@@ -16,7 +16,7 @@ public class TestCaseForLogout extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("Logout")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("Logout")
+    @Tag("Critical Flow")
     public void verifyLogout() throws InterruptedException {
 
         mainPage.loginButton.waitClickable();

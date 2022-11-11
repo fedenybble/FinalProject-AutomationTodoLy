@@ -22,7 +22,7 @@ public class TestCasesForSignUp extends TestBaseTodoLy {
     @Owner("Federico Padin")
     @Epic("SignUp")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("SignUp")
+    @Tag("Critical Flow")
     @ParameterizedTest
     @CsvSource({
             "1", "10", "50", "300"
